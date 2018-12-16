@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+       function changeColor(color){
+         document.body.style.backgroundColor=color;
+         alert(`iframe1调用方法啦，参数是：${color}`);
+       }
+    </script>
+    
+</head>
+<body>
+    <button onClick="changeColor('red')">Red </button>
+    <button onClick="changeColor('green')">Green </button>
+    <button onClick="changeColor('blue')">Bule </button>
+    <div>
+        <p>Iframe1</p>
+        <iframe src="ifram1.html" name="ifram1" id="ifram1"></iframe>
+    </div>
+    <div>
+        <p>Iframe2</p>
+        <iframe src="iframe2.html"></iframe>
+    </div>
+</body>
+</html>

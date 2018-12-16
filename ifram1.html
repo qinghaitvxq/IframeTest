@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+      function changeColor(color){
+         document.body.style.backgroundColor=color;
+       }
+    </script>
+    <style>
+      body {
+         background-color: coral;
+      }
+    </style>
+</head>
+<body>
+    <h1>this is iframe 11111.</h1>
+    <button onClick="parent.changeColor('pink')">Pink </button>
+    <button onClick="parent.changeColor('orange')">Orange </button>
+
+</body>
+</html>
